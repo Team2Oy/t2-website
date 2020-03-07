@@ -55,9 +55,10 @@ h6 {
 }
 
 header.masthead {
-  position: relative;
-  overflow: hidden;
-  padding-top: calc(7rem + 72px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 20em;
 }
 
 header.masthead .masthead-content {
@@ -73,17 +74,9 @@ header.masthead .masthead-content .masthead-subheading {
   font-size: 2rem;
 }
 
-header.masthead .bg-circle {
-  z-index: 0;
-  position: absolute;
-  border-radius: 100%;
-  background: linear-gradient(0deg, #43a1ee 0%, #ff6a00 100%);
-}
-
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(10rem + 55px);
-    padding-bottom: 10rem;
+    min-height: 30em;
   }
   header.masthead .masthead-content .masthead-heading {
     font-size: 6rem;
@@ -123,4 +116,8 @@ header.masthead .bg-circle {
 
 .btn-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+}
+
+.container {
+  max-width: 50em;
 }
