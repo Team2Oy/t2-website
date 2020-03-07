@@ -87,21 +87,21 @@ header.masthead .masthead-content .masthead-subheading {
 }
 
 .bg-primary {
-  background-color: #43a1ee !important;
+  background-color: #3170ae !important;
 }
 
 .btn-primary {
-  background-color: #43a1ee;
-  border-color: #43a1ee;
+  background-color: #3170ae;
+  border-color: #3170ae;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #158ae9 !important;
-  border-color: #158ae9 !important;
+  background-color: #265686 !important;
+  border-color: #265686 !important;
 }
 
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(67, 161, 238, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(49, 112, 174, 0.5);
 }
 
 .btn-secondary {
