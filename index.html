@@ -92,22 +92,23 @@
                 </p>
                 <br>
                 <form action="https://europe-west1-t6-isp-233311.cloudfunctions.net/handle-form-from-website" id="contactForm" class="col-lg-8">
-                <div class="form-group">
-                    <label for="email" class="required">Sähköpostiosoite</label>
-                    <input type="email" class="form-control" id="email" name="email">
-                    <small id="emailHelp" class="form-text text-muted">Emme välitä sähköpostiosoitettasi eteenpäin</small>
-                </div>
-                <div class="form-group">
-                    <label for="phone" class="required">Puhelin</label>
-                    <input class="form-control" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Viesti</label>
-                    <textarea class="form-control" id="message" name="message"></textarea>
-                </div>
-                <div class="float-right">
-                    <button class="btn btn-primary" type="submit">Lähetä</button>
-                </div>
+                    <div id="error"></div>
+                    <div class="form-group">
+                        <label for="email" class="required">Sähköpostiosoite</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                        <small id="emailHelp" class="form-text text-muted">Emme välitä sähköpostiosoitettasi eteenpäin</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="required">Puhelin</label>
+                        <input class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Viesti</label>
+                        <textarea class="form-control" id="message" name="message"></textarea>
+                    </div>
+                    <div class="float-right">
+                        <button class="btn btn-primary" type="submit">Lähetä</button>
+                    </div>
                 </form>
             </div>
             </div>
@@ -134,6 +135,12 @@
            {
                console.log("success", data);
                $("#contactForm").replaceWith( "<h3>Kiitos!</h3><p>Mikäli jätit yhteystietosi olemme sinuun yhteydessä mahdollisimman pian.</p>");
+           },
+           error: function() {
+               $("#error").append('<h3 class="text-danger">Viestin lähetys epäonnistui</h3><p class="text-danger">Yritä myöhemmin uudelleen</p>');
+               setTimeout(function(){
+                   $("#error").empty();
+               }, 10000)
            }
          });
     });
