@@ -1,25 +1,49 @@
 header.masthead {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   min-height: 20em;
   .masthead-content {
     z-index: 1;
+    padding: 0;
     position: relative;
     .masthead-heading {
-      font-size: 4rem;
+      display: none;
     }
     .masthead-subheading {
       font-size: 2rem;
     }
   }
 }
+.head-content {
+  display: block;
+}
+body {
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin-top: 1em;
+  flex-grow: 2;
+}
+.logo {
+  padding: 1em;
+  width: 10em;
+}
+
+@media (min-width: 768px) {
+
+}
 
 @media (min-width: 992px) {
+  .head-content {
+    display: flex;
+    flex-direction: row;
+  }
   header.masthead {
-     min-height: 30em;
+     min-height: 10em;
     .masthead-content {
       .masthead-heading {
+        display: inline;
         font-size: 6rem;
       }
       .masthead-subheading {
@@ -27,4 +51,10 @@ header.masthead {
       }
     }
   }
+
+  .logo {
+    margin: 5em;
+    width: 15em;
+  }
+
 }
