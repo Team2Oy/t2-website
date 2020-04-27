@@ -6,3 +6,5 @@
 
 ### Basic Usage
 - `npm start` starts web server
+
+![Alt text](screenshot.png?raw=true "Title")
