@@ -6,10 +6,11 @@ header.masthead {
     padding: 0;
     position: relative;
     .masthead-heading {
-//      display: none;
+      color: #db430b;
     }
     .masthead-subheading {
       font-size: 2rem;
+      color: #111;
     }
   }
 }
@@ -58,4 +59,8 @@ main {
     width: 15em;
   }
 
+}
+
+#contactForm {
+  padding-bottom:2em;
 }

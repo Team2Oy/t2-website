@@ -61,8 +61,13 @@ header.masthead .masthead-content {
   position: relative;
 }
 
+header.masthead .masthead-content .masthead-heading {
+  color: #db430b;
+}
+
 header.masthead .masthead-content .masthead-subheading {
   font-size: 2rem;
+  color: #111;
 }
 
 .head-content {
@@ -106,6 +111,10 @@ main {
   }
 }
 
+#contactForm {
+  padding-bottom: 2em;
+}
+
 .bg-primary {
   background-color: #3170ae !important;
 }
@@ -125,17 +134,17 @@ main {
 }
 
 .btn-secondary {
-  background-color: #ff6a00;
-  border-color: #ff6a00;
+  background-color: #db430b;
+  border-color: #db430b;
 }
 
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  background-color: #cc5500 !important;
-  border-color: #cc5500 !important;
+  background-color: #aa3409 !important;
+  border-color: #aa3409 !important;
 }
 
 .btn-secondary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(219, 67, 11, 0.5);
 }
 
 .container {
