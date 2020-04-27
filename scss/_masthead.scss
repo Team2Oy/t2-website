@@ -1,11 +1,12 @@
 header.masthead {
-  min-height: 20em;
   .masthead-content {
+    margin-top: 4em;
+
     z-index: 1;
     padding: 0;
     position: relative;
     .masthead-heading {
-      display: none;
+//      display: none;
     }
     .masthead-subheading {
       font-size: 2rem;
@@ -13,7 +14,7 @@ header.masthead {
   }
 }
 .head-content {
-  display: block;
+    display: block;
 }
 body {
   min-width: 100vw;
@@ -40,7 +41,7 @@ main {
     flex-direction: row;
   }
   header.masthead {
-     min-height: 10em;
+    min-height: 10em;
     .masthead-content {
       .masthead-heading {
         display: inline;
