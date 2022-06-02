@@ -1,0 +1,73 @@
+h1 {
+  text-align: center;
+}
+h1,
+h2 {
+  font-family: 'Catamaran';
+  font-weight: 800 !important;
+  line-height: 1.1;
+  margin: 1rem 0;
+}
+
+body {
+  font-family: 'Lato';
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  line-height: 1.6;
+}
+
+header {
+  background-image: url("../elizabeth-lies-T9Gsevu_N8Y-unsplash.jpg");
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  flex-grow: 2;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+footer {
+  background: black;
+  flex-grow: 2;
+  color: white;
+}
+
+.logo {
+  width: 10em;
+}
+
+@media (min-width: 992px) {
+  header {
+    min-height: 10em;
+  }
+
+  .logo {
+    width: 20em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 1em;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50em;
+  display: flex;
+  flex-direction: column;
+}
+
