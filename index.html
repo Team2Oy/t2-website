@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5L48JWR');</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Olemme viiden freelancerin pyörittämä ohjelmistoyritys, joka ratkaisee asiakkaidensa liiketoimintaongelmia ohjelmiston avulla.">
@@ -16,8 +11,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link href="css/style.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 </head>
-<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L48JWR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body>
   <header>
     <div class="container center">
       <img class="logo" src="img/logo.svg" alt="Team2 Oy">
@@ -53,18 +47,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
     <section class="container">
       <h2>Palvelut</h2>
-      <p>
-      Toukokuussa 2022 julkaisimme Signatures.fi palvelun jossa voi allekirjoittaa pdf dokumentteja. 
-      Palvelussa voidaan hoitaa sopimusten ja esimerkiksi vuokrasopimusten tai pöytäkirjojen allekirjoitus sähköisesti. Käyttäjät tunnistetaan vahvasti pankkitunnistamisen avulla tai mobiilisertifikaatilla.
-      </p>
-      <p>
-      Tule mukaan ja kokeile olisiko tässä sopiva ratkaisu allekirjoitustarpeisiisi: <a href="https://signatures.fi/">sähköinen allekirjoitus</a>.
-      </p>
+      <div>
+          <h3>Organisaatiodata</h3>
+        <p>
+        Tammikuussa 2026 julkaisimme Beta version Odata.fi palvelun jossa on esillä avointa organisaatiodataa Suomesta.
+        Palvelusta voi tarkistaa yritysten rekisteritietoja, verotietoja, sekä rekisteröityjä domaineja: <a href="https://odata.fi/">odata.fi</a> 
+        </p>
+      </div>
+      <div>
+          <h3>Sähköinen allekirjoitus</h3>
+        <p>
+        Toukokuussa 2022 julkaisimme Signatures.fi palvelun jossa voi allekirjoittaa pdf dokumentteja. 
+        Palvelussa voidaan hoitaa sopimusten ja esimerkiksi vuokrasopimusten tai pöytäkirjojen allekirjoitus sähköisesti. Käyttäjät tunnistetaan vahvasti pankkitunnistamisen avulla tai mobiilisertifikaatilla.
+        </p>
+        <p>
+        Tule mukaan ja kokeile olisiko tässä sopiva ratkaisu allekirjoitustarpeisiisi: <a href="https://signatures.fi/">sähköinen allekirjoitus</a>.
+        </p>
+      </div>
     </section>
     <section class="container">
       <h2>Yhteystiedot</h2>
       <p>
-      Meidät saat helposti kiinni soittamalla numeroon 0407555521.
+      Meidät saat helposti kiinni sähköpostitse osoitteesta info (at) team2.fi.
       </p>
     </section>
   </main>
@@ -74,4 +78,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
 </body>
+  <script>
+var script = document.createElement('script');
+script.defer = true;
+script.dataset.domain = "team2.fi";
+script.dataset.api = "https://plausible.io/api/event";
+script.src = "https://plausible.team2.fi/js/script.js";
+document.getElementsByTagName('head')[0].appendChild(script);
+</script>
+
 </html>
